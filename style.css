@@ -131,4 +131,34 @@ body {
 
 h2, p {
     margin: 20px 0;
+
+    /* General Page Layout */
+body {
+    padding-left: 3cm;
+    padding-right: 3cm;
+    text-align: left; /* Ensure text is left-aligned */
+}
+
+/* Post Body */
+.post-body {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Bullet points alignment */
+ul {
+    list-style-position: inside; /* Makes bullets align with the text */
+    padding-left: 0; /* Remove default padding */
+}
+
+/* Bullet point items */
+ul li {
+    margin-bottom: 10px; /* Add some space between the items */
+}
+
+/* Paragraphs and headings inside the post */
+.post-body p, .post-body h3 {
+    margin: 10px 0;
+    text-align: left;
+}
 }
