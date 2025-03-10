@@ -117,6 +117,7 @@ footer {
 .post-image {
     width: 100%; /* Full width of the container */
     max-width: 800px; /* Max width of the image */
+    max-height: 400px; /* Limit the height to avoid it becoming too tall */
     margin: 0 auto; /* Center the image horizontally */
     overflow: hidden; /* Ensures any overflow is hidden */
     border: 2px solid #00d018; /* Green border around the image */
