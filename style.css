@@ -90,3 +90,45 @@ nav ul li a:hover {
 }
 
 .blog-preview h2 a:hover {
+    text-decoration: underline;
+    color: white; /* White color on hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #002200;
+    color: #00ff00;
+}
+
+/* General page styles */
+.post-content {
+    width: 90%; /* Add some width constraint to prevent text from spreading across the entire page */
+    max-width: 1000px; /* Max width to ensure text isn't too stretched */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 20px; /* Padding for spacing from the edges */
+    color: white; /* White text for content for better readability */
+}
+
+/* Post image container */
+.post-image {
+    width: 100%;
+    max-width: 800px; /* Set a max width for the image */
+    margin: 0 auto; /* Center the image container */
+    overflow: hidden;
+    border: 2px solid #00ff00; /* Green border */
+    box-shadow: 0 0 10px #00ff00; /* Green glow around image */
+}
+
+/* Ensures the images are responsive and don't overflow */
+.post-image img {
+    width: 100%; /* Image width will be responsive */
+    height: auto;
+    object-fit: cover; /* Ensure images are cropped without distortion */
+}
+
+/* Post body text */
+.post-body {
+    text-align: left;
+ 
