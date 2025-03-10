@@ -90,3 +90,19 @@ footer {
     background-color: #002200;
     color: #00ff00;
 }
+
+/* Post image container */
+.post-image {
+    width: 100%;
+    max-width: 800px; /* Set a max width to ensure it doesn't get too big */
+    margin: 0 auto; /* Center the image container */
+    overflow: hidden; /* Ensures image fits within the box */
+    border: 2px solid #00ff00; /* Green border around the image box */
+    box-shadow: 0 0 10px #00ff00; /* Optional glow effect */
+}
+
+.post-image img {
+    width: 100%; /* Makes the image fill the box */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures the image fills the box without stretching */
+}
