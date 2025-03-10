@@ -1,12 +1,15 @@
-/* Matrix-style black and green theme */
+/* Matrix-style black, green, and white theme */
 body {
     background-color: black;
-    color: #00ff00;
+    color: #00ff00; /* Green text for Matrix look */
     font-family: "Courier New", Courier, monospace;
     margin: 0;
     padding: 0;
     background: linear-gradient(black, #002200);
     background-size: 100%;
+    padding-left: 3cm;  /* Left padding for spacing */
+    padding-right: 3cm; /* Right padding for spacing */
+    text-align: left;   /* Left-align text for readability */
 }
 
 /* Header */
@@ -16,17 +19,19 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    box-shadow: 0 0 15px #00ff00;
+    box-shadow: 0 0 15px #00ff00; /* Green glow effect */
 }
 
 h1 {
     margin: 0;
     font-size: 32px;
+    color: white; /* White text for the title */
 }
 
 .subheading {
     font-size: 18px;
     opacity: 0.8;
+    color: #00ff00; /* Green color for subheading */
 }
 
 /* Navigation Menu */
@@ -42,9 +47,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #00ff00;
+    color: #00ff00; /* Green for links */
     text-decoration: none;
     font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: white; /* White text on hover */
 }
 
 /* Blog Preview */
@@ -57,121 +67,26 @@ nav ul li a {
 }
 
 .blog-preview article {
-    background-color: #001100;
+    background-color: #001100; /* Dark green box for articles */
     padding: 15px;
-    border: 2px solid #00ff00;
+    border: 2px solid #00ff00; /* Green border */
     width: 250px; /* Smaller width for boxes */
     text-align: center;
     overflow: hidden;
-    box-shadow: 0 0 5px 2px #00ff00; /* Subtle glow effect around the box */
+    box-shadow: 0 0 5px 2px #00ff00; /* Subtle green glow effect */
 }
 
 .blog-preview img {
-    width: 100%; /* Makes the image fill the width of the box but not exceed it */
+    width: 100%; /* Makes the image fill the width of the box */
     height: auto; /* Maintains the image's aspect ratio */
-    object-fit: cover; /* Ensures images fill the box without being stretched */
+    object-fit: cover; /* Ensures the image fills the box without distortion */
 }
 
 .blog-preview h2 a {
-    color: #00ff00;
+    color: #00ff00; /* Green text for blog post titles */
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
 }
 
 .blog-preview h2 a:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #002200;
-    color: #00ff00;
-}
-
-/* General page styles */
-body {
-    background-color: black;
-    color: #00ff00;
-    font-family: "Courier New", Courier, monospace;
-    margin: 0;
-    padding: 0;
-}
-
-/* Container for centered content */
-.post-content {
-    width: 90%; /* Add some width constraint to prevent text from spreading across the entire page */
-    max-width: 1000px; /* Max width to ensure text isn't too stretched */
-    margin: 0 auto; /* Center the content horizontally */
-    padding: 20px; /* Padding for spacing from the edges */
-}
-
-/* Post image container */
-.post-image {
-    width: 100%;
-    max-width: 800px; /* Set a max width for the image */
-    margin: 0 auto; /* Center the image container */
-    overflow: hidden;
-    border: 2px solid #00ff00;
-    box-shadow: 0 0 10px #00ff00;
-}
-
-.post-image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-/* Post body text */
-.post-body {
-    text-align: center; /* Center align the text inside the post */
-}
-
-h2, p {
-    margin: 20px 0;
-
-    /* General Page Layout */
-body {
-    padding-left: 3cm;
-    padding-right: 3cm;
-    text-align: left; /* Ensure text is left-aligned */
-}
-
-/* Post Body */
-.post-body {
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Bullet points alignment */
-ul {
-    list-style-position: inside; /* Makes bullets align with the text */
-    padding-left: 0; /* Remove default padding */
-}
-
-/* Bullet point items */
-ul li {
-    margin-bottom: 10px; /* Add some space between the items */
-}
-
-/* Paragraphs and headings inside the post */
-.post-body p, .post-body h3 {
-    margin: 10px 0;
-    text-align: left;
-    
-}
-/* Styling for images inside post body */
-.small-image {
-    max-width: 50%;  /* Limit the width to 50% of the container width (you can adjust this value) */
-    height: auto;    /* Keep the aspect ratio intact */
-    margin: 20px 0;  /* Add space above and below the image */
-    display: block;  /* Make the image behave like a block element (start on a new line) */
-    margin-left: auto;
-    margin-right: auto; /* Centers the image */
-}
-
-} 
-    
-}
