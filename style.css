@@ -111,27 +111,20 @@ footer {
     padding: 0 20px; /* Add padding for spacing from the edges */
 }
 
-/* Container for smaller images inside post body */
-
-/* Post Image */
+/* Post image container */
 .post-image {
-    width: 100%; /* Full width of the container */
-    max-width: 800px; /* Max width of the image */
-    max-height: 400px; /* Limit the height to avoid it becoming too tall */
-    margin: 0 auto; /* Center the image horizontally */
-    overflow: hidden; /* Ensures any overflow is hidden */
-    border: 2px solid #00d018; /* Green border around the image */
-    box-shadow: 0 0 10px #00d018; /* Subtle green glow effect around the image */
-    padding: 0; /* Remove any extra padding around the image */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    max-width: 800px; /* Set a max width for the image */
+    margin: 0 auto; /* Center the image container */
+    overflow: hidden;
+    border: 2px solid #00ff00;
+    box-shadow: 0 0 10px #00ff00;
 }
 
-
-.post-image-container {
-    width: 100%;        /* Full width of the parent container */
-    max-width: 600px;   /* Set a max width for the image container (narrower) */
-    margin: 0 auto;     /* Center the container horizontally */
-    padding: 10px 0;    /* Optional padding to add some space */
+.post-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 /* Styling for images inside post body with smaller size */
