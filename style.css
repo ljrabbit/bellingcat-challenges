@@ -163,14 +163,15 @@ ul li {
 }
 
     /* Styling for images inside post body with smaller size */
-.small-image {
-    max-width: 60%;  /* Limit the width to 60% of the container width (adjustable) */
-    height: auto;    /* Keep the aspect ratio intact */
-    margin: 20px 0;  /* Add space above and below the image */
-    display: block;  /* Make the image behave like a block element */
-    margin-left: auto;
-    margin-right: auto; /* Centers the image */
-    border: 2px solid #00ff00; /* Green border to match theme */
+
+    .small-image {
+    max-width: 60% !important;  /* Ensure this size is enforced */
+    height: auto !important;
+    margin: 20px 0 !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    border: 2px solid #00ff00;
 }
 
 /* Make sure images in posts never overflow */
@@ -181,13 +182,6 @@ ul li {
     display: block; /* Ensure images are centered */
 }
 
-    .small-image {
-    max-width: 70% !important;  /* Ensure this size is enforced */
-    height: auto !important;
-    margin: 20px 0 !important;
-    display: block !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    border: 2px solid #00ff00;
+
 }
  
