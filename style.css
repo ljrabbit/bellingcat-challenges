@@ -164,7 +164,7 @@ ul li {
 
     /* Styling for images inside post body with smaller size */
 .small-image {
-    max-width: 70%;  /* Limit the width to 70% of the container width (adjustable) */
+    max-width: 60%;  /* Limit the width to 60% of the container width (adjustable) */
     height: auto;    /* Keep the aspect ratio intact */
     margin: 20px 0;  /* Add space above and below the image */
     display: block;  /* Make the image behave like a block element */
