@@ -131,4 +131,33 @@ footer {
 /* Post body text */
 .post-body {
     text-align: left;
+
+    /* Styling for images inside post body with smaller size */
+.small-image {
+    max-width: 70%;  /* Limit the width to 70% of the container width (adjustable) */
+    height: auto;    /* Keep the aspect ratio intact */
+    margin: 20px 0;  /* Add space above and below the image */
+    display: block;  /* Make the image behave like a block element */
+    margin-left: auto;
+    margin-right: auto; /* Centers the image */
+    border: 2px solid #00ff00; /* Green border to match theme */
+}
+
+/* Make sure images in posts never overflow */
+.post-body img {
+    max-width: 100%;  /* Ensures images do not overflow */
+    height: auto;
+    margin: 15px auto;  /* Space around images */
+    display: block; /* Ensure images are centered */
+}
+
+    .small-image {
+    max-width: 70% !important;  /* Ensure this size is enforced */
+    height: auto !important;
+    margin: 20px 0 !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    border: 2px solid #00ff00;
+}
  
