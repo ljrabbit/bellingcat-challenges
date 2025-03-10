@@ -134,10 +134,10 @@ footer {
     margin-top: 20px;
 }
 
-/* Ensure paragraphs don't stretch beyond the image width */
-.post-body p {
+/* Ensure paragraphs and h3 don't stretch beyond the image width */
+.post-body p, .post-body h3 {
     max-width: 800px; /* Set the same width as the image */
-    margin: 10px auto; /* Center the paragraph and add spacing */
+    margin: 10px auto; /* Center the text and add spacing */
     padding: 0 10px; /* Optional padding for better text alignment */
 }
 
@@ -152,10 +152,14 @@ ul li {
     text-align: left;
 }
 
-/* Paragraphs and headings inside the post */
-.post-body h3 {
-    margin: 10px 0;
+/* Headings (h2, h3) */
+.post-body h2, .post-body h3 {
     text-align: left;
+    margin: 10px 0;
+    max-width: 800px;
+    margin: 10px auto; /* Center headings like the text */
+    padding: 0 10px;
+}
 }
 
     /* Styling for images inside post body with smaller size */
