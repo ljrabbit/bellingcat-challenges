@@ -141,6 +141,7 @@ footer {
     width: 100%;
     height: auto;
     object-fit: cover; /* Ensures the image fills the box without distortion */
+}
 
 /* Ensure images in posts never overflow */
 .post-body img {
@@ -149,7 +150,6 @@ footer {
     margin: 15px auto;  /* Space around images */
     display: block; /* Ensure images are centered */
 }
-
 
 /* Post body text */
 .post-body {
@@ -160,7 +160,6 @@ footer {
     max-width: 800px; /* Limit the maximum width of the post body */
     margin: 0 auto; /* Center the container horizontally */
     padding: 0 20px; /* Add some padding to prevent the text from touching the edges */
-}
 }
 
 /* Ensure paragraphs and h3 don't stretch beyond the image width */
