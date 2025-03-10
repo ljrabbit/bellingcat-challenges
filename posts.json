@@ -1,0 +1,17 @@
+{
+  "posts": [
+    {
+      "title": "Challenge 1: Investigating a Location",
+      "snippet": "Using OSINT tools to locate and identify a specific street.",
+      "image": "images/street-BAy8BoR_.jpg",
+      "link": "post1.html"
+    },
+    {
+      "title": "Challenge 2: Tracking Digital Footprints",
+      "snippet": "Analyzing digital footprints to trace a person's online activity.",
+      "image": "images/someotherimage.jpg",
+      "link": "post2.html"
+    }
+    // Add more posts as needed
+  ]
+}
