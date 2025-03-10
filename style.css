@@ -76,10 +76,12 @@ nav ul li a:hover {
     box-shadow: 0 0 5px 2px #00d018; /* Subtle green glow effect */
 }
 
+/* Ensure all images in the blog preview have the same size */
 .blog-preview img {
-    width: 100%; /* Makes the image fill the width of the box */
-    height: auto; /* Maintains the image's aspect ratio */
+    width: 100%; /* Ensures the image fills the width of the box */
+    height: 200px; /* Set a fixed height for uniformity */
     object-fit: cover; /* Ensures the image fills the box without distortion */
+    object-position: center; /* Ensures the center of the image is shown */
 }
 
 .blog-preview h2 a {
