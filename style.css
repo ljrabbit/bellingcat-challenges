@@ -44,7 +44,7 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Blog Preview */
+/* Blog Preview (boxes layout) */
 .blog-preview {
     display: flex;
     flex-wrap: wrap;
@@ -53,7 +53,7 @@ nav ul li a {
     padding: 20px;
 }
 
-.blog-preview article {
+.challenge-box {
     background-color: #001100;
     padding: 15px;
     border: 2px solid #00ff00;
@@ -61,17 +61,18 @@ nav ul li a {
     text-align: center;
 }
 
-.blog-preview img {
+.challenge-box img {
     width: 100%;
+    height: auto;
     border-bottom: 2px solid #00ff00;
 }
 
-.blog-preview h2 a {
+.challenge-box h2 a {
     color: #00ff00;
     text-decoration: none;
 }
 
-.blog-preview h2 a:hover {
+.challenge-box h2 a:hover {
     text-decoration: underline;
 }
 
@@ -80,37 +81,4 @@ footer {
     text-align: center;
     padding: 10px;
     background-color: #002200;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .blog-preview {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .blog-preview article {
-        width: 90%;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
-
-    .subheading {
-        font-size: 16px;
-    }
-}
-
-/* Hover effect for navigation */
-nav ul li a:hover {
-    color: #00cc00;
-    text-decoration: underline;
-}
-
-/* Hover effect for blog preview */
-.blog-preview article:hover {
-    background-color: #003300;
-    transform: scale(1.05);
-    transition: transform 0.3s ease, background-color 0.3s ease;
 }
