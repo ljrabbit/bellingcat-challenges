@@ -57,6 +57,11 @@ nav ul li a:hover {
     color: white; /* White text on hover */
 }
 
+/* Visited links */
+a:visited {
+    color: white; /* White color for visited links */
+}
+
 /* Blog Preview */
 .blog-preview {
     display: flex;
