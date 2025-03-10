@@ -95,9 +95,11 @@ footer {
 
 /* Blog Preview Image */
 .blog-preview img {
-    max-width: 100%; /* Ensures image doesn't exceed its container's width */
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Centers the image by making it a block element */
+    width: 100%; /* Ensures the image fits within the container's width */
+    max-width: 100%; /* Ensures the image does not exceed the container's width */
+    height: auto; /* Keeps the aspect ratio intact */
+    display: block; /* Makes the image a block-level element so it centers */
     margin: 0 auto; /* Centers the image */
-    max-height: 200px; /* Limits the height of the image to 200px (you can adjust this) */
+    max-height: 200px; /* Limits the height of the image to 200px */
+    object-fit: contain; /* Ensures the image is contained within the dimensions without cropping */
 }
