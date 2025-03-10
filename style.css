@@ -1,143 +1,106 @@
-/* General body and font settings */
+/* Matrix-style black and green theme */
 body {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #000;
-    color: #0f0; /* Green text */
+    background-color: black;
+    color: #00ff00;
+    font-family: "Courier New", Courier, monospace;
     margin: 0;
     padding: 0;
+    background: linear-gradient(black, #002200);
+    background-size: 100%;
 }
 
-/* Header settings */
+/* Header */
 header {
-    background-color: #000;
-    color: #0f0;
+    background-color: #002200;
     padding: 20px;
-    text-align: center;
-    border-bottom: 3px solid #0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 0 15px #00ff00;
 }
 
-header h1 {
+h1 {
     margin: 0;
-    font-size: 3em;
-    letter-spacing: 2px;
+    font-size: 32px;
 }
 
-header .subheading {
-    font-size: 1.2em;
-    color: #0f0;
-    margin-top: 5px;
+.subheading {
+    font-size: 18px;
+    opacity: 0.8;
 }
 
-/* Navigation styles */
+/* Navigation Menu */
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    gap: 15px;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
 }
 
 nav ul li a {
-    color: #0f0;
+    color: #00ff00;
     text-decoration: none;
-    font-size: 1.1em;
-    text-transform: uppercase;
+    font-weight: bold;
 }
 
-nav ul li a:hover {
-    color: #fff;
-    border-bottom: 2px solid #0f0;
-}
-
-/* Main content area */
-main {
-    padding: 20px;
-    font-size: 1.2em;
-}
-
-/* Blog preview section */
+/* Blog Preview */
 .blog-preview {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
+    padding: 20px;
 }
 
 .blog-preview article {
-    width: 30%;
-    background-color: #111;
+    background-color: #001100;
     padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
-    transition: transform 0.3s ease;
-}
-
-.blog-preview article:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(0, 255, 0, 0.6);
+    border: 2px solid #00ff00;
+    width: 250px; /* Smaller width for boxes */
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 0 5px 2px #00ff00; /* Subtle glow effect around the box */
 }
 
 .blog-preview img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+    width: 100%; /* Makes the image fill the width of the box but not exceed it */
+    height: auto; /* Maintains the image's aspect ratio */
+    object-fit: cover; /* Ensures images fill the box without being stretched */
 }
 
-.blog-preview h2 {
-    font-size: 1.5em;
-    color: #0f0;
-    margin-top: 10px;
+.blog-preview h2 a {
+    color: #00ff00;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-.blog-preview p {
-    color: #0f0;
-    font-size: 1em;
-    margin-top: 10px;
+.blog-preview h2 a:hover {
+    text-decoration: underline;
 }
 
-/* Footer settings */
+/* Footer */
 footer {
     text-align: center;
-    padding: 20px;
-    background-color: #000;
-    color: #0f0;
-    border-top: 3px solid #0f0;
-    position: fixed;
+    padding: 10px;
+    background-color: #002200;
+    color: #00ff00;
+}
+
+/* Matrix effect - subtle */
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     bottom: 0;
-    width: 100%;
-}
-
-/* Styling for the posts page (full post) */
-article img {
-    width: 80%;
-    margin: 20px auto;
-    display: block;
-    border-radius: 8px;
-}
-
-article h2 {
-    font-size: 2em;
-    text-align: center;
-    color: #0f0;
-    margin-top: 20px;
-}
-
-article p {
-    color: #0f0;
-    font-size: 1.2em;
-    line-height: 1.6;
-    margin: 20px 0;
-}
-
-/* Adding a slight matrix-style effect to the background (subtle effect) */
-@keyframes matrix {
-    0% { background-color: black; }
-    50% { background-color: #111; }
-    100% { background-color: black; }
-}
-
-body {
-    animation: matrix 3s infinite;
+    background: url('https://media.giphy.com/media/l2SpQ7f5EXtKxXhQA/giphy.gif') repeat;
+    opacity: 0.1;
+    pointer-events: none;
+    z-index: -1;
 }
