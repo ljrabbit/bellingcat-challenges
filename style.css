@@ -82,3 +82,11 @@ footer {
     padding: 10px;
     background-color: #002200;
 }
+
+/* Style for post header image */
+.post-header-image {
+    width: 100%;  /* Make the image span the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 2px solid #00ff00; /* Optional border */
+    margin-bottom: 20px; /* Space between the image and the content */
+}
