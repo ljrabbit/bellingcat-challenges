@@ -122,7 +122,9 @@ footer {
     border: 2px solid #00d018; /* Green border around the image */
     box-shadow: 0 0 10px #00d018; /* Subtle green glow effect around the image */
     padding: 0; /* Remove any extra padding around the image */
+    height: auto; /* Maintain aspect ratio */
 }
+
 
 .post-image-container {
     width: 100%;        /* Full width of the parent container */
