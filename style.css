@@ -124,12 +124,13 @@ footer {
 .post-image img {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    object-fit: cover; /* Ensures the image fills the box without distortion */
 }
 
 /* Styling for images inside post body with smaller size */
 .small-image {
-    max-width: 90%;  /* Limit the width to 90% of the container width (adjustable) */
+    width: 100%;  /* Ensures the image fills the container */
+    max-width: 90%;  /* Limit the width to 90% of the container width */
     height: auto;    /* Keep the aspect ratio intact */
     margin: 20px 0;  /* Add space above and below the image */
     display: block;  /* Make the image behave like a block element */
@@ -137,6 +138,7 @@ footer {
     margin-right: auto; /* Centers the image */
     border: 2px solid #00ff00; /* Green border to match theme */
 }
+
 
 /* Post body text */
 .post-body {
