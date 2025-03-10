@@ -83,10 +83,20 @@ footer {
     background-color: #002200;
 }
 
-/* Style for post header image */
-.post-header-image {
-    width: 100%;  /* Make the image span the full width of the container */
-    height: auto; /* Maintain aspect ratio */
-    border-bottom: 2px solid #00ff00; /* Optional border */
-    margin-bottom: 20px; /* Space between the image and the content */
+/* Blog Preview Article */
+.blog-preview article {
+    background-color: #001100;
+    padding: 15px;
+    border: 2px solid #00ff00;
+    width: 300px;
+    text-align: center; /* Centers the text in the article */
+    margin: 0 auto; /* Centers the article itself */
+}
+
+/* Blog Preview Image */
+.blog-preview img {
+    max-width: 80%; /* Limits the image to 80% of the width of the article */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes any extra space below the image */
+    margin: 0 auto; /* Centers the image */
 }
