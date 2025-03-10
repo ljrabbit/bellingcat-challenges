@@ -131,13 +131,15 @@ footer {
     padding: 10px 0;    /* Optional padding to add some space */
 }
 
+/* Styling for images inside post body with smaller size */
 .small-image {
-    width: 100%;        /* Ensures the image fills the container */
-    height: auto;       /* Maintains aspect ratio */
-    margin: 20px 0;     /* Space above and below the image */
-    display: block;     /* Make the image behave like a block element */
+    max-width: 90%;  /* Limit the width to 90% of the container width (adjustable) */
+    height: auto;    /* Keep the aspect ratio intact */
+    margin: 20px 0;  /* Add space above and below the image */
+    display: block;  /* Make the image behave like a block element */
+    margin-left: auto;
+    margin-right: auto; /* Centers the image */
     border: 2px solid #00ff00; /* Green border to match theme */
-}
 }
 
 /* Post body text */
@@ -172,17 +174,6 @@ ul li {
     max-width: 800px;
     margin: 10px auto; /* Center headings like the text */
     padding: 0 10px;
-}
-
-/* Styling for images inside post body with smaller size */
-.small-image {
-    max-width: 90%;  /* Limit the width to 90% of the container width (adjustable) */
-    height: auto;    /* Keep the aspect ratio intact */
-    margin: 20px 0;  /* Add space above and below the image */
-    display: block;  /* Make the image behave like a block element */
-    margin-left: auto;
-    margin-right: auto; /* Centers the image */
-    border: 2px solid #00ff00; /* Green border to match theme */
 }
 
 /* Make sure images in posts never overflow */
