@@ -103,12 +103,12 @@ footer {
 }
 
 /* General page styles */
+/* Post content layout */
 .post-content {
-    width: 90%; /* Add some width constraint to prevent text from spreading across the entire page */
-    max-width: 1000px; /* Max width to ensure text isn't too stretched */
+    width: 100%; /* Full width */
+    max-width: 800px; /* Ensure the content doesn't stretch too wide (adjust as needed) */
     margin: 0 auto; /* Center the content horizontally */
-    padding: 20px; /* Padding for spacing from the edges */
-    color: white; /* White text for content for better readability */
+    padding: 0 20px; /* Add padding for spacing from the edges */
 }
 
 /* Post image container */
@@ -117,20 +117,46 @@ footer {
     max-width: 800px; /* Set a max width for the image */
     margin: 0 auto; /* Center the image container */
     overflow: hidden;
-    border: 2px solid #00ff00; /* Green border */
-    box-shadow: 0 0 10px #00ff00; /* Green glow around image */
+    border: 2px solid #00ff00;
+    box-shadow: 0 0 10px #00ff00;
 }
 
-/* Ensures the images are responsive and don't overflow */
 .post-image img {
-    width: 100%; /* Image width will be responsive */
+    width: 100%;
     height: auto;
-    object-fit: cover; /* Ensure images are cropped without distortion */
+    object-fit: cover;
 }
 
 /* Post body text */
 .post-body {
+    text-align: left; /* Left align the text */
+    line-height: 1.6; /* Add some line-height for readability */
+    margin-top: 20px;
+}
+
+/* Ensure paragraphs don't stretch beyond the image width */
+.post-body p {
+    max-width: 800px; /* Set the same width as the image */
+    margin: 10px auto; /* Center the paragraph and add spacing */
+    padding: 0 10px; /* Optional padding for better text alignment */
+}
+
+/* Bullet points */
+ul {
+    list-style-position: inside; 
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
     text-align: left;
+}
+
+/* Paragraphs and headings inside the post */
+.post-body h3 {
+    margin: 10px 0;
+    text-align: left;
+}
 
     /* Styling for images inside post body with smaller size */
 .small-image {
