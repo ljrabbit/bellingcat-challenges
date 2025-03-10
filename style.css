@@ -91,18 +91,44 @@ footer {
     color: #00ff00;
 }
 
+/* General page styles */
+body {
+    background-color: black;
+    color: #00ff00;
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for centered content */
+.post-content {
+    width: 90%; /* Add some width constraint to prevent text from spreading across the entire page */
+    max-width: 1000px; /* Max width to ensure text isn't too stretched */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 20px; /* Padding for spacing from the edges */
+}
+
 /* Post image container */
 .post-image {
     width: 100%;
-    max-width: 800px; /* Set a max width to ensure it doesn't get too big */
+    max-width: 800px; /* Set a max width for the image */
     margin: 0 auto; /* Center the image container */
-    overflow: hidden; /* Ensures image fits within the box */
-    border: 2px solid #00ff00; /* Green border around the image box */
-    box-shadow: 0 0 10px #00ff00; /* Optional glow effect */
+    overflow: hidden;
+    border: 2px solid #00ff00;
+    box-shadow: 0 0 10px #00ff00;
 }
 
 .post-image img {
-    width: 100%; /* Makes the image fill the box */
-    height: auto; /* Maintains aspect ratio */
-    object-fit: cover; /* Ensures the image fills the box without stretching */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Post body text */
+.post-body {
+    text-align: center; /* Center align the text inside the post */
+}
+
+h2, p {
+    margin: 20px 0;
 }
