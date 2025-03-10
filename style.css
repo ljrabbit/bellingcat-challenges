@@ -127,17 +127,20 @@ footer {
     object-fit: cover; /* Ensures the image fills the box without distortion */
 }
 
-/* Styling for images inside post body with smaller size */
+/* small image container */
 .small-image {
-    width: 100%;  /* Ensure the image fills the width of the container */
-    max-width: 300px; /* Set a specific max-width for small images */
-    height: auto;    /* Maintain aspect ratio */
-    margin: 20px 0;  /* Space above and below the image */
-    display: block;  /* Make the image behave like a block element */
-    margin-left: auto;
-    margin-right: auto; /* Centers the image */
-    border: 2px solid #00ff00; /* Green border to match theme */
+    width: 100%;
+    max-width: 600px; /* Set a max width for the image */
+    margin: 0 auto; /* Center the image container */
+    overflow: hidden;
+    border: 2px solid #00ff00;
+    box-shadow: 0 0 10px #00ff00;
 }
+
+.small-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image fills the box without distortion */
 
 /* Ensure images in posts never overflow */
 .post-body img {
