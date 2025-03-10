@@ -109,7 +109,6 @@ footer {
     max-width: 800px; /* Ensure the content doesn't stretch too wide (adjust as needed) */
     margin: 0 auto; /* Center the content horizontally */
     padding: 0 20px; /* Add padding for spacing from the edges */
-    margin-top: 0.5cm; /* Add gap between the header and content */
 }
 
 /* Post image container */
@@ -120,11 +119,6 @@ footer {
     overflow: hidden;
     border: 2px solid #00ff00;
     box-shadow: 0 0 10px #00ff00;
-}
-
-/* Add gap between the image and the header on blog pages */
-.post-image {
-    margin-top: 0.5cm; /* Adds a 0.5cm gap above the image */
 }
 
 /* Post body text */
@@ -178,4 +172,9 @@ ul li {
     height: auto;
     margin: 15px auto;  /* Space around images */
     display: block; /* Ensure images are centered */
+}
+
+/* Add gap between the header and content */
+header + .post-content {
+    margin-top: 0.5cm; /* Add gap between header and content */
 }
