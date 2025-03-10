@@ -20,32 +20,27 @@
     </header>
 
     <main>
-        <section class="blog-preview" id="blog-preview">
-            <!-- Blog posts will be loaded here dynamically -->
+        <section class="blog-preview">
+            <article>
+                <img src="images/street-BAy8BoR_.jpg" alt="Challenge 1 Header">
+                <h2><a href="post1.html">Challenge 1: Investigating a Location</a></h2>
+                <p>A brief snippet about this OSINT challenge. Click to read more.</p>
+            </article>
+            <article>
+                <img src="images/another-image.jpg" alt="Challenge 2 Header">
+                <h2><a href="post2.html">Challenge 2: Tracking Digital Footprints</a></h2>
+                <p>Snippet about tracking digital footprints. Click to read more.</p>
+            </article>
+            <article>
+                <img src="images/challenge-3-image.jpg" alt="Challenge 3 Header">
+                <h2><a href="post3.html">Challenge 3: Analyzing Satellite Data</a></h2>
+                <p>A brief overview of satellite data analysis. Click to read more.</p>
+            </article>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2025 OSINT Challenges. All rights reserved.</p>
     </footer>
-
-    <script>
-        // Load posts dynamically from posts.json
-        fetch('posts.json')
-            .then(response => response.json())
-            .then(data => {
-                const postsContainer = document.getElementById('blog-preview');
-                data.posts.forEach(post => {
-                    const postElement = document.createElement('article');
-                    postElement.innerHTML = `
-                        <img src="${post.image}" alt="${post.title}">
-                        <h2><a href="${post.link}">${post.title}</a></h2>
-                        <p>${post.snippet}</p>
-                    `;
-                    postsContainer.appendChild(postElement);
-                });
-            })
-            .catch(error => console.error('Error loading posts:', error));
-    </script>
 </body>
 </html>
