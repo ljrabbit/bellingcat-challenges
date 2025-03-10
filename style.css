@@ -129,14 +129,22 @@ footer {
 
 /* Styling for images inside post body with smaller size */
 .small-image {
-    width: 100%;  /* Ensures the image fills the container */
-    max-width: 90%;  /* Limit the width to 90% of the container width */
-    height: auto;    /* Keep the aspect ratio intact */
-    margin: 20px 0;  /* Add space above and below the image */
+    width: 100%;  /* Ensure the image fills the width of the container */
+    max-width: 600px; /* Set a specific max-width for small images */
+    height: auto;    /* Maintain aspect ratio */
+    margin: 20px 0;  /* Space above and below the image */
     display: block;  /* Make the image behave like a block element */
     margin-left: auto;
     margin-right: auto; /* Centers the image */
     border: 2px solid #00ff00; /* Green border to match theme */
+}
+
+/* Ensure images in posts never overflow */
+.post-body img {
+    max-width: 100%;  /* Ensures images do not overflow */
+    height: auto;
+    margin: 15px auto;  /* Space around images */
+    display: block; /* Ensure images are centered */
 }
 
 
