@@ -57,9 +57,27 @@ nav ul li a:hover {
     color: white; /* White text on hover */
 }
 
+/* Default link color (unvisited) */
+a {
+    color: #00ff00; /* Bright green for visibility */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hover effect */
+a:hover {
+    text-decoration: underline;
+    color: white; /* White on hover for contrast */
+}
+
 /* Visited links */
 a:visited {
-    color: white; /* White color for visited links */
+    color: white; /* Keeps visited links white as you like */
+}
+
+/* Active link (while clicking) */
+a:active {
+    color: #00cc00; /* Slightly darker green when clicked */
 }
 
 /* Blog Preview */
