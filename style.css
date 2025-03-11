@@ -60,7 +60,7 @@ nav ul li a:hover {
 /* Default link color (unvisited) */
 a {
     color: #00ff00; /* Bright green for visibility */
-    text-decoration: none;
+    text-decoration: underline; /* Underlined for clarity */
     font-weight: bold;
 }
 
