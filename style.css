@@ -7,8 +7,6 @@ body {
     padding: 0;
     background: linear-gradient(black, #002200);
     background-size: 100%;
-    padding-left: 3cm;  /* Left padding for spacing */
-    padding-right: 3cm; /* Right padding for spacing */
     text-align: left;   /* Left-align text for readability */
 }
 
