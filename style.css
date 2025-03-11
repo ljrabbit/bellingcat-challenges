@@ -47,14 +47,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #00d018; /* Green for links */
+    color: white; /* White for nav links */
     text-decoration: none;
     font-weight: bold;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
-    color: white; /* White text on hover */
+    text-decoration: underline; /* Underline text on hover */
+    color: white; 
 }
 
 /* Default link color (unvisited) */
