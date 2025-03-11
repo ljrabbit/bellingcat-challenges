@@ -3,6 +3,8 @@ body {
     background-color: black;
     color: #00d018; /* Green text for Matrix look */
     font-family: "Courier New", Courier, monospace;
+    padding-left: 3cm;
+    padding-right: 3cm;
     margin: 0;
     padding: 0;
     background: linear-gradient(black, #002200);
@@ -14,8 +16,6 @@ body {
 header {
     background-color: #002200;
     padding: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
