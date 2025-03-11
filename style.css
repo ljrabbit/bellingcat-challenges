@@ -10,6 +10,10 @@ body {
     text-align: left;   /* Left-align text for readability */
 }
 
+main {
+    padding: 2em;
+}
+
 /* Header */
 header {
     background-color: #002200;
